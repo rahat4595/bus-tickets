@@ -33,7 +33,7 @@ for (let kbd of seats) {
       });
 
       if (array.length > 4) {
-        alert("You Buy Maximum Ticket");
+        alert("You can't buy more than 4 tickets");
 
         return;
       } else if (array.length === 4) {
@@ -81,6 +81,6 @@ document.getElementById("apply").addEventListener("click", function () {
     setElementInnerTextById("discount-detals-price", discounts);
     setElementInnerTextById("grand-price-total", discountedPrice);
   } else {
-    alert("Invalid Coupon Code");
+    alert("Sorry! This coupon code is invalid");
   }
 });
